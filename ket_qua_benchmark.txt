@@ -1,0 +1,119 @@
+Code: bench.py
+
+python src/bench.py
+bench.py
+Indexing 369 chunks...
+  indexed 10/369 chunks
+  indexed 20/369 chunks
+  indexed 30/369 chunks
+  indexed 40/369 chunks
+  indexed 50/369 chunks
+  indexed 60/369 chunks
+  indexed 70/369 chunks
+  indexed 80/369 chunks
+  indexed 90/369 chunks
+  indexed 100/369 chunks
+  indexed 110/369 chunks
+  indexed 120/369 chunks
+  indexed 130/369 chunks
+  indexed 140/369 chunks
+  indexed 150/369 chunks
+  indexed 160/369 chunks
+  indexed 170/369 chunks
+  indexed 180/369 chunks
+  indexed 190/369 chunks
+  indexed 200/369 chunks
+  indexed 210/369 chunks
+  indexed 220/369 chunks
+  indexed 230/369 chunks
+  indexed 240/369 chunks
+  indexed 250/369 chunks
+  indexed 260/369 chunks
+  indexed 270/369 chunks
+  indexed 280/369 chunks
+  indexed 290/369 chunks
+  indexed 300/369 chunks
+  indexed 310/369 chunks
+  indexed 320/369 chunks
+  indexed 330/369 chunks
+  indexed 340/369 chunks
+  indexed 350/369 chunks
+  indexed 360/369 chunks
+  indexed 369/369 chunks
+Using embedding backend: gemini-embedding-001
+Loaded 369 chunks from /mnt/c/Users/thaih/Projects/Vin/K4-DAY07-HoThaiHoa-2A202602915/data/doi-tra-bao-hanh
+Agent backend: gemini_llm
+
+Top-3 retrieval results (metadata filter: audience=buyer)
+
+
+1. Query: Khi chọn đơn vị vận chuyển đến lấy hàng hoàn trả, đơn vị vận chuyển hỗ trợ tối đa bao nhiêu lần và trong khoảng thời gian nào?
+   Gold: Tối đa 3 lần lấy hàng, trong vòng 1–3 ngày kể từ ngày lấy hàng đã chọn.
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+   Agent answer: Dựa vào nội dung trong bài, khi bạn chọn hình thức đơn vị vận chuyển đến lấy hàng hoàn trả:
+
+* **Số lần hỗ trợ tối đa:** Tối đa 3 lần lấy hàng khác nhau.
+* **Khoảng thời gian:** Trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn.
+   Top-1: score=0.774572 doc_id=shopee-189477 chunk_id=shopee-189477#3
+           Bước 34: Đăng tải bằng chứng trả hàng tại Chi tiết Trả hàng/hoàn tiền của đơn hàng đang hoàn trả Xem chi tiết Cách đóng gói đơn hàng hoàn trả và cách Tra cứu mã vận đơn trả hàng tại đây. 1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến l...
+   Top-2: score=0.760597 doc_id=shopee-79508 chunk_id=shopee-79508#6
+           4. Giao hàng cho nhân viên nhận hàng hoàn trả: Thời gian chọn hình thức trả hàng: kiểm tra tại trang Chi tiết Trả hàng/Hoàn tiền Qúa hạn trả hàng mà đơn hàng chưa được giao cho nhân viên vận chuyển, đơn hàng sẽ bị hủy tự độn...
+   Top-3: score=0.757682 doc_id=shopee-189477 chunk_id=shopee-189477#4
+           Nếu đơn vị vận chuyển không đến lấy hàng đúng thời gian dự kiến hoặc cập nhật sai trạng thái hoàn hàng, bạn có thể: Liên hệ đơn vị vận chuyển hỗ trợ nhận đơn hàng hoàn trả của bạn để được hỗ trợ. Hoặc bạn cũng có thể chủ động mang hàng ra b...
+
+2. Query: Khi nào người mua được hoàn lại phí vận chuyển ban đầu của đơn hàng?
+   Gold: Khi yêu cầu Trả hàng/Hoàn tiền cho tất cả sản phẩm trong đơn và được Shopee/Người bán đồng ý hoàn đầy đủ giá trị đã thanh toán. Nếu chỉ yêu cầu cho một số sản phẩm thì không được hoàn phí vận chuyển ban đầu.
+   Agent answer: Dựa vào đoạn văn bản trên, người mua sẽ được hoàn lại phí vận chuyển ban đầu khi:
+
+* Người mua yêu cầu Trả hàng/Hoàn tiền cho **tất cả sản phẩm** trong đơn hàng đã đặt; **và**
+* Được Shopee hoặc Người bán **đồng ý hoàn đầy đủ giá trị** mà người mua đã thanh toán. 
+
+*(Lưu ý: Nếu chỉ yêu cầu Trả hàng/Hoàn tiền cho một số sản phẩm nhất định trong đơn hàng thì phí vận chuyển sẽ không được hoàn lại).*
+   Top-1: score=0.800686 doc_id=shopee-189477 chunk_id=shopee-189477#8
+           Nếu bạn yêu cầu Trả hàng/Hoàn tiền cho một số sản phẩm nhất định trong đơn hàng đã đặt (VD: yêu cầu Trả hàng/Hoàn tiền cho 1 trong 2 sản phẩm đã mua), phí vận chuyển sẽ không được hoàn lại cho bạn. 2.2. Phí vận chuyển trả hàng: Nếu bạn trả ...
+   Top-2: score=0.761789 doc_id=shopee-189477 chunk_id=shopee-189477#7
+           1.4. Lưu ý khi chọn hình thức Tự sắp xếp: Bạn phải lưu lại hóa đơn trả hàng với đầy đủ thông tin: Mã vận đơn, số điện thoại và đúng địa chỉ người nhận, không thu hộ (COD) 2. Chính sách hỗ trợ phí trả hàng: 2.1. Phí vận chuyển ban đầu khi yê...
+   Top-3: score=0.748286 doc_id=shopee-189477 chunk_id=shopee-189477#10
+           Đối với đơn hàng không thuộc Shopee Mall, Shopee sẽ hoàn lại khoản phí này dưới hình thức hoàn Shopee Xu sau khi yêu cầu Trả hàng/Hoàn tiền được chấp nhận hoàn tiền và đáp ứng đầy đủ các điều kiện hỗ trợ phí trả hàng, số xu hoàn trả cố định...
+
+3. Query: Sau khi yêu cầu trả hàng được chấp nhận, người mua chọn đơn vị vận chuyển đến lấy hàng thì cần thực hiện những bước nào?
+   Gold: Chọn thời gian và địa chỉ lấy hàng → đóng gói hàng → dán phiếu gửi hàng hoặc viết mã vận đơn Shopee cung cấp lên hộp → bàn giao cho đơn vị vận chuyển tại địa chỉ và thời gian đã chọn.
+   Agent answer: Sau khi chọn hình thức đơn vị vận chuyển đến lấy hàng, người mua cần thực hiện 4 bước sau:
+
+* **Bước 1:** Chọn thời gian và địa chỉ lấy hàng
+* **Bước 2:** Đóng gói hàng trong hộp vận chuyển
+* **Bước 3:** Dán phiếu gửi hàng hoặc viết tay trực tiếp mã vận đơn được Shopee cung cấp lên hộp vận chuyển
+* **Bước 4:** Đơn vị vận chuyển sẽ đến lấy hàng theo địa chỉ và thời gian đã chọn
+   Top-1: score=0.809154 doc_id=shopee-189477 chunk_id=shopee-189477#1
+           (Miễn phí trả hàng) Bước 1: Chọn thời gian và địa chỉ lấy hàng Bước 2: Đóng gói hàng trong hộp vận chuyển Bước 3: Dán phiếu gửi hàng hoặc viết tay trực tiếp mã vận đơn được Shopee cung cấp lên hộp vận chuyển Bước 4: Đơn v...
+   Top-2: score=0.803451 doc_id=shopee-189477 chunk_id=shopee-189477#3
+           Bước 34: Đăng tải bằng chứng trả hàng tại Chi tiết Trả hàng/hoàn tiền của đơn hàng đang hoàn trả Xem chi tiết Cách đóng gói đơn hàng hoàn trả và cách Tra cứu mã vận đơn trả hàng tại đây. 1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến l...
+   Top-3: score=0.803094 doc_id=shopee-189477 chunk_id=shopee-189477#4
+           Nếu đơn vị vận chuyển không đến lấy hàng đúng thời gian dự kiến hoặc cập nhật sai trạng thái hoàn hàng, bạn có thể: Liên hệ đơn vị vận chuyển hỗ trợ nhận đơn hàng hoàn trả của bạn để được hỗ trợ. Hoặc bạn cũng có thể chủ động mang hàng ra b...
+
+4. Query: Có những hình thức gửi hàng hoàn trả nào?
+   Gold: Đơn vị vận chuyển đến lấy hàng; trả hàng tại bưu cục; tự sắp xếp.
+   Agent answer: Dựa vào thông tin trong bài viết, có **2 hình thức** gửi hàng hoàn trả:
+
+1. **Đơn vị vận chuyển đến lấy hàng** (Miễn phí trả hàng)
+2. **Trả hàng tại bưu cục** (Miễn phí trả hàng)
+   Top-1: score=0.804968 doc_id=shopee-189477 chunk_id=shopee-189477#0
+           # [Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả [Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Hoàn tiền] Các...
+   Top-2: score=0.783820 doc_id=shopee-189477 chunk_id=shopee-189477#1
+           (Miễn phí trả hàng) Bước 1: Chọn thời gian và địa chỉ lấy hàng Bước 2: Đóng gói hàng trong hộp vận chuyển Bước 3: Dán phiếu gửi hàng hoặc viết tay trực tiếp mã vận đơn được Shopee cung cấp lên hộp vận chuyển Bước 4: Đơn v...
+   Top-3: score=0.779582 doc_id=shopee-79508 chunk_id=shopee-79508#6
+           4. Giao hàng cho nhân viên nhận hàng hoàn trả: Thời gian chọn hình thức trả hàng: kiểm tra tại trang Chi tiết Trả hàng/Hoàn tiền Qúa hạn trả hàng mà đơn hàng chưa được giao cho nhân viên vận chuyển, đơn hàng sẽ bị hủy tự độn...
+
+5. Query: Với hình thức ‘Tự sắp xếp’ để trả hàng, tôi có phải thanh toán trước phí vận chuyển không?
+   Gold: Với đối tượng người mua: Có, người mua cần thanh toán trước phí vận chuyển trả hàng.
+   Agent answer: Dựa trên thông tin được cung cấp trong đoạn văn:
+
+**Có**, bạn cần phải thanh toán trước phí trả hàng (phí vận chuyển) nếu chọn hình thức **Tự sắp xếp**. 
+
+Sau đó, Shopee sẽ hỗ trợ lại phí trả hàng cho bạn trong vòng 3 - 5 ngày làm việc (không tính Thứ 7, Chủ nhật, Ngày lễ & Tết) sau khi yêu cầu trả hàng/hoàn tiền của bạn được chấp nhận.
+   Top-1: score=0.799102 doc_id=shopee-189477 chunk_id=shopee-189477#7
+           1.4. Lưu ý khi chọn hình thức Tự sắp xếp: Bạn phải lưu lại hóa đơn trả hàng với đầy đủ thông tin: Mã vận đơn, số điện thoại và đúng địa chỉ người nhận, không thu hộ (COD) 2. Chính sách hỗ trợ phí trả hàng: 2.1. Phí vận chuyển ban đầu khi yê...
+   Top-2: score=0.772454 doc_id=shopee-189477 chunk_id=shopee-189477#9
+           Nếu bạn trả hàng qua hình thức Tự sắp xếp, bạn cần thanh toán trước phí trả hàng. Shopee sẽ hỗ trợ bạn phí trả hàng trong vòng 3 - 5 ngày làm việc (không kể Thứ 7, Chủ nhật, Ngày lễ & Tết) cụ thể như sau: Đối với đơn hàng thuộc Shopee Mall:...
+   Top-3: score=0.744913 doc_id=shopee-189477 chunk_id=shopee-189477#8
+           Nếu bạn yêu cầu Trả hàng/Hoàn tiền cho một số sản phẩm nhất định trong đơn hàng đã đặt (VD: yêu cầu Trả hàng/Hoàn tiền cho 1 trong 2 sản phẩm đã mua), phí vận chuyển sẽ không được hoàn lại cho bạn. 2.2. Phí vận chuyển trả hàng: Nếu bạn trả ...
